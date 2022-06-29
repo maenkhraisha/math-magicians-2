@@ -1,17 +1,23 @@
+/* eslint-disable */
 import React from 'react';
 
 import './calculator.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
       <div className="calc-container">
         <div className="calc-buttons">
-          <div data-testid="result" className="calc-result">
-            0
-          </div>
-          <button data-testid="ac" type="button" className="button calc-ac">
+          <button
+            data-testid="ac"
+            type="button"
+            className="button calc-ac"
+            onClick={this.props.updateResult}
+          >
             <div className="cell">AC</div>
           </button>
           <button
