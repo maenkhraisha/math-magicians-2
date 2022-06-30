@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './calculator.css';
@@ -10,7 +10,7 @@ function prepareData(expresion) {
   operation = operation || '';
   next = next || '';
   let result = total + operation + next;
-  result = result === '' ? 0 : result;
+  result = result === '' ? '0' : result;
   return result;
 }
 // eslint-disable-next-line react/prefer-stateless-function
@@ -22,14 +22,16 @@ const Calculator = (props) => {
   });
 
   const clickHandler = (e) => {
-    const { updateResult } = props;
     const btnName = e.target.innerText;
     const newExpresion = calculate(expresion, btnName);
-    setExpresion(newExpresion, () => {
-      const result = prepareData(newExpresion);
-      updateResult(result);
-    });
+    setExpresion(newExpresion);
   };
+
+  useEffect(() => {
+    const { updateResult } = props;
+    const result = prepareData(expresion);
+    updateResult(result);
+  }, [expresion]);
 
   return (
     <div className="calc-container">

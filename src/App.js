@@ -8,7 +8,7 @@ class App extends React.Component {
     super();
     this.updateResult = this.updateResult.bind(this);
     this.state = {
-      result: 0,
+      result: '0',
     };
   }
 
@@ -18,6 +18,7 @@ class App extends React.Component {
 
   render() {
     const { result } = this.state;
+
     return (
       <div>
         <Result result={result} />
