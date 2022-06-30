@@ -12,14 +12,14 @@ class App extends React.Component {
       result: 0,
     };
   }
-  updateResult(){
-    this.setState({result:50});
+  updateResult(value) {
+    this.setState({result:value});
   }
   render() {
     const { result } = this.state;
     return (
       <div>
-        <Result result={result}/>
+        <Result result={result} />
         <Calculator updateResult={this.updateResult} />
       </div>
     );
