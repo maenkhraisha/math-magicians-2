@@ -63,6 +63,15 @@ li {
   font-size: 2rem;
 }
 
+.cell:hover {
+  transform: scale(1.1);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  border: 1px solid #8e8c8c;
+}
+
 .calc-result {
   grid-column: 1/-1;
   background-color: #858694;
