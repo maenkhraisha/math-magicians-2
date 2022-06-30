@@ -1,5 +1,5 @@
-/* eslint-disable */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './calculator.css';
 import calculate from './logic/calculate';
@@ -17,14 +17,17 @@ class Calculator extends React.Component {
   }
 
   clickHandler(e) {
+    const { updateResult } = this.props;
     const btnName = e.target.innerText;
     const newState = calculate(this.state, btnName);
-    this.setState(newState , () => {
-      const t = this.state.total?this.state.total:'';
-      const o = this.state.operation?this.state.operation:'';
-      const n = this.state.next?this.state.next:'';
-      const result =  t + o + n;
-      this.props.updateResult(result);
+    this.setState(newState, () => {
+      let { total, operation, next } = this.state;
+      total = total || '';
+      operation = operation || '';
+      next = next || '';
+      let result = total + operation + next;
+      result = result === '' ? 0 : result;
+      updateResult(result);
     });
   }
 
@@ -190,4 +193,7 @@ class Calculator extends React.Component {
   }
 }
 
+Calculator.propTypes = {
+  updateResult: PropTypes.func.isRequired,
+};
 export default Calculator;

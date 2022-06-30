@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import Calculator from './components/calculator/calculator';
 import Result from './components/calculator/result';
@@ -12,9 +11,11 @@ class App extends React.Component {
       result: 0,
     };
   }
+
   updateResult(value) {
-    this.setState({result:value});
+    this.setState({ result: value });
   }
+
   render() {
     const { result } = this.state;
     return (
