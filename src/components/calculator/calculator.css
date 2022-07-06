@@ -20,11 +20,6 @@ li {
 }
 
 /* Header Styling */
-.header {
-  display: flex;
-  justify-content: space-between;
-  height: 20vh;
-}
 
 .header-title {
   align-self: center;
@@ -45,17 +40,40 @@ li {
 }
 
 /* Calculator Component */
+.calc-page-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-.calc-buttons {
+.button-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
+  gap: 0.25rem;
+}
+
+.calc-container {
+  width: 50%;
+}
+
+.calc-result {
+  grid-column: 1/-1;
+  background-color: #858694;
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+  padding-right: 0.5rem;
+  height: 4rem;
+  border-radius: 5px;
+  margin-bottom: 0.25rem;
 }
 
 .button {
   padding: 0;
   border: 1px solid #d1d1d1;
+  border-radius: 5px;
 }
 
 .cell {
@@ -70,16 +88,6 @@ li {
 .button:hover {
   transform: scale(1.1);
   border: 1px solid #8e8c8c;
-}
-
-.calc-result {
-  grid-column: 1/-1;
-  background-color: #858694;
-  color: white;
-  font-size: 3rem;
-  text-align: right;
-  padding-right: 0.5rem;
-  height: 4rem;
 }
 
 .calc-ac,

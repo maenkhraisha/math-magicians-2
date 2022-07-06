@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  margin: 3rem auto;
+  box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+  height: 80vh;
+  width: 80vw;
+  font-family: 'Baloo Thambi', cursive;
+}
+
+.link-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #c50000;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.title-container span {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  padding-bottom: 13px;
+}
+
+.title-animation-container > span {
+  animation: glow 6.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    font-size: 45px;
+  }
+
+  10%,
+  90% {
+    font-size: 32px;
+  }
+}
+
+.title-animation-container > span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.title-animation-container > span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.title-animation-container > span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.title-animation-container > span:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.title-animation-container > span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.title-animation-container > span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.title-animation-container > span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+.title-animation-container > span:nth-child(9) {
+  animation-delay: 4s;
+}
+
+.title-animation-container > span:nth-child(10) {
+  animation-delay: 4.5s;
+}
+
+.title-animation-container > span:nth-child(11) {
+  animation-delay: 5s;
+}
+
+.title-animation-container > span:nth-child(12) {
+  animation-delay: 5.5s;
+}
+
+.title-animation-container > span:nth-child(13) {
+  animation-delay: 6s;
+}
+
+.link-items {
+  color: rgb(16, 14, 146);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link-items:focus {
+  color: rgb(16, 14, 146);
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.link-items:hover h3 {
+  animation: shake 0.8s infinite;
+}
+
+.link-items ::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(16, 14, 146);
+  opacity: 1;
+}
+
+.link-items :hover::after,
+.link-items :focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+@keyframes shake {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0) rotate(1deg); }
+  30% { -webkit-transform: translate(0, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.title-container div::before {
+  background-color: #c50000;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 40%;
+  margin-bottom: 5px;
+}
+
+.title-container div::after {
+  background-color: #c50000;
+  content: '';
+  display: block;
+  position: relative;
+  left: 60%;
+  bottom: 0;
+  height: 3px;
+  width: 40%;
+  margin-bottom: 0.25em;
+}
+
+.main-page-img {
+  float: right;
+}
+
+.header-logo {
+  width: 5rem;
+}
