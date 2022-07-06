@@ -55,7 +55,7 @@ li {
 }
 
 .calc-container {
-  width: 50%;
+  width: 40%;
 }
 
 .calc-result {
@@ -77,8 +77,8 @@ li {
 }
 
 .cell {
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
 }
 
 .cell:hover {
