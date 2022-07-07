@@ -20,7 +20,9 @@
 ## Live Demo 
 
 Go to live demo : 
-comming soon
+https://maenkhraisha.github.io/math-magicians-2/
+
+![portfolio](./src/assets/images/snapshot.png)
 
 ## out resourse
 
@@ -32,9 +34,13 @@ comming soon
 ```
 $ git clone git@github.com:maenkh/math-magician.git
 ```
+```
 use npm install
+```
+```
 use npm start
-npm test
+```
+
 
 
 ### Prerequisites
