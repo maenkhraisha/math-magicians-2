@@ -1,7 +1,7 @@
 import animation from '../assets/images/bg.png';
 
 const Home = () => (
-  <div>
+  <div className="home-page-text">
     <p>
       What is a calculator? A calculator is a device that performs arithmetic
       operations on numbers. Basic calculators can do only addition,

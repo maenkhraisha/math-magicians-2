@@ -15,6 +15,10 @@ body {
   font-family: 'Baloo Thambi', cursive;
 }
 
+.home-page-text > p {
+  font-size: 18px;
+}
+
 .link-container {
   display: flex;
   gap: 2rem;
