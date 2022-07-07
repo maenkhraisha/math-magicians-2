@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/maenkhraisha/math-magicians-2/static/css/main.18523077.css",
-    "main.js": "/maenkhraisha/math-magicians-2/static/js/main.eb03b2bf.js",
-    "static/media/logo.gif": "/maenkhraisha/math-magicians-2/static/media/logo.6d1eda7aef6d6709edbf.gif",
-    "static/media/bg.png": "/maenkhraisha/math-magicians-2/static/media/bg.4a12544b1953bac1f019.png",
-    "index.html": "/maenkhraisha/math-magicians-2/index.html",
-    "main.18523077.css.map": "/maenkhraisha/math-magicians-2/static/css/main.18523077.css.map",
-    "main.eb03b2bf.js.map": "/maenkhraisha/math-magicians-2/static/js/main.eb03b2bf.js.map"
+    "main.css": "/math-magicians-2/static/css/main.18523077.css",
+    "main.js": "/math-magicians-2/static/js/main.57b42e6a.js",
+    "static/media/logo.gif": "/math-magicians-2/static/media/logo.6d1eda7aef6d6709edbf.gif",
+    "static/media/bg.png": "/math-magicians-2/static/media/bg.4a12544b1953bac1f019.png",
+    "index.html": "/math-magicians-2/index.html",
+    "main.18523077.css.map": "/math-magicians-2/static/css/main.18523077.css.map",
+    "main.57b42e6a.js.map": "/math-magicians-2/static/js/main.57b42e6a.js.map"
   },
   "entrypoints": [
     "static/css/main.18523077.css",
-    "static/js/main.eb03b2bf.js"
+    "static/js/main.57b42e6a.js"
   ]
 }
