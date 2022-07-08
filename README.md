@@ -22,6 +22,7 @@
 #### Go to live demo : 
 - https://maenkhraisha.github.io/math-magicians-2/
 - https://math-magician-maen.herokuapp.com/
+- https://stellular-sopapillas-624cfb.netlify.app/
 
 ![portfolio](./src/assets/images/snapshot.png)
 
